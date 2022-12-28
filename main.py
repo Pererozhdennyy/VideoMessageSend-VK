@@ -46,6 +46,7 @@ class Video:
         return response.json()
 
 
-access_token = 'token'  # vk.com, app_id - 6287487 (для метода video.getVideoMessageUploadInfo)
-video = Video(access_token, 'test.mp4')
-print(video.VideoMessageSend(1))
+if __name__ == '__main__':
+    access_token = 'token'  # vk.com, app_id - 6287487 (для метода video.getVideoMessageUploadInfo)
+    video = Video(access_token, 'test.mp4')
+    print(video.VideoMessageSend(1))
